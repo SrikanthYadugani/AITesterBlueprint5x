@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draft Test Plan - KAN-4 - VWO Passkey and SSO Login</title>
+<style>
+  :root {
+    --ink: #1b1f24;
+    --muted: #586574;
+    --line: #d7dee7;
+    --accent: #513783;
+    --accent-soft: #f3eff9;
+    --p0: #9c2525;
+    --p1: #805400;
+    --p2: #3e5e26;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: #eef1f4;
+    font: 10pt/1.45 "Segoe UI", Arial, sans-serif;
+  }
+  .page {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 38px 46px 48px;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .08);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  header img { width: 82px; height: auto; object-fit: contain; }
+  h1 { margin: 0 0 5px; font-size: 23pt; line-height: 1.2; }
+  h2 {
+    margin: 26px 0 9px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 15pt;
+  }
+  h3 { margin: 17px 0 6px; font-size: 11pt; }
+  p { margin: 6px 0 9px; }
+  ul, ol { margin: 6px 0 10px 20px; padding: 0; }
+  li { margin: 3px 0; }
+  .sub, .muted { color: var(--muted); }
+  .sub { font-size: 9pt; }
+  .meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 20px;
+    margin-top: 10px;
+    font-size: 9pt;
+  }
+  .meta strong { color: var(--muted); font-weight: 600; }
+  .callout {
+    margin: 12px 0;
+    padding: 9px 12px;
+    border-left: 4px solid var(--accent);
+    background: var(--accent-soft);
+  }
+  .warning { border-left-color: #9a6b00; background: #fff8e6; }
+  table {
+    width: 100%;
+    margin: 9px 0 15px;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+  }
+  th, td {
+    padding: 6px 7px;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--accent-soft); font-weight: 650; }
+  tbody tr:nth-child(even) td { background: #fafbfc; }
+  thead { display: table-header-group; }
+  .nowrap { white-space: nowrap; }
+  .priority { font-weight: 700; white-space: nowrap; }
+  .p0 { color: var(--p0); }
+  .p1 { color: var(--p1); }
+  .p2 { color: var(--p2); }
+  .small { font-size: 8pt; }
+  .gate {
+    margin-top: 22px;
+    padding: 14px;
+    border: 2px solid var(--accent);
+    background: #faf8fd;
+  }
+  .gate h2 { margin-top: 0; }
+  footer {
+    margin-top: 24px;
+    padding-top: 9px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 8pt;
+  }
+  @page {
+    size: A4;
+    margin: 14mm 13mm 16mm;
+    @bottom-right {
+      content: "KAN-4 | Draft for review | Page " counter(page);
+      color: #586574;
+      font: 8pt "Segoe UI", Arial, sans-serif;
+    }
+  }
+  @media print {
+    body { background: #fff; font-size: 9pt; }
+    .page { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+    h2 { break-after: avoid; }
+    h3 { break-after: avoid; }
+    table, .callout, .gate { break-inside: avoid; }
+    tr { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <img src="data:image/webp;base64,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" alt="TheTestingAcademy logo">
+    <div>
+      <h1>Test Plan: KAN-4</h1>
+      <div class="sub">[VWO] Add Passkey and SSO Login Options to VWO Login Page</div>
+      <div class="meta">
+        <div><strong>Issue:</strong> KAN-4 (Story)</div>
+        <div><strong>Priority:</strong> Medium (as recorded in Jira)</div>
+        <div><strong>Status:</strong> Draft - pending human review</div>
+        <div><strong>Prepared:</strong> 10 Nov 2026</div>
+        <div><strong>Components / fix version:</strong> Not specified</div>
+        <div><strong>Linked issues / attachments:</strong> None returned by Jira</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="callout warning">
+    <strong>Draft only.</strong> This plan is not approved and must be reviewed by a QA owner.
+    No detailed test cases or automation are authorized until the human review gate is cleared.
+  </div>
+
+  <h2>1. Scope &amp; Objectives</h2>
+  <p><strong>Story goal:</strong> Allow a user to sign in to VWO using Passkey or Single Sign-On (SSO), in addition to the existing authentication methods, for more secure and convenient access.</p>
+  <p><strong>Objective:</strong> Assess the new login options' visibility, expected success and failure outcomes, compatibility, accessibility/responsiveness, and security properties against KAN-4. Pass requires agreed acceptance criteria to be met in the designated staging environment; staging deployment is stated in the ticket's Definition of Done.</p>
+  <p><strong>In scope:</strong></p>
+  <ul>
+    <li>Visibility and ordering of both buttons below "Sign in with Google".</li>
+    <li>SSO success, invalid-credential handling, and operation with configured identity providers.</li>
+    <li>Successful login with a registered passkey, no-passkey guidance/fallback, passkey failure, and unsupported browser/device messaging.</li>
+    <li>Responsive/accessibility checks requested by the ticket, plus the stated secure-protocol and sensitive-data protections.</li>
+  </ul>
+  <p><strong>Out of scope:</strong> Passkey registration (explicitly assigned to a separate story) and SSO provider configuration. Existing login methods are included only for targeted regression around the changed login page; broader authentication regression scope needs confirmation.</p>
+  <p><strong>Acceptance-criteria identifiers used for traceability:</strong></p>
+  <ul>
+    <li><strong>AC-1 - UI:</strong> Both named options are visible on the login page below Google sign-in.</li>
+    <li><strong>AC-2 - SSO:</strong> Valid SSO authenticates and redirects to the dashboard; invalid credentials show an appropriate error.</li>
+    <li><strong>AC-3 - Passkey:</strong> A registered, verified passkey authenticates and redirects to the dashboard; no passkey produces fallback or guidance.</li>
+    <li><strong>AC-4 - Errors:</strong> Failed SSO, passkey failure, and unsupported browser/device conditions show appropriate messages.</li>
+    <li><strong>AC-5 - Compatibility:</strong> Passkeys work on supported browsers/devices; SSO works with all configured identity providers.</li>
+    <li><strong>AC-6 - Security:</strong> Flows use secure protocols (OAuth/SAML/WebAuthn); sensitive data is not exposed in UI or network logs.</li>
+    <li><strong>TS-1..TS-7 - Ticket-listed scenarios:</strong> Visibility/order, SSO success/failure, passkey success/no passkey, unsupported platforms, and responsive/accessibility checks.</li>
+  </ul>
+
+  <h2>2. Gaps &amp; Questions for the Author</h2>
+  <p>These are unresolved requirements, not assumed behavior. Resolve the blocking items before execution or sign-off.</p>
+  <table>
+    <thead><tr><th>ID</th><th>Finding</th><th>Question for the author</th><th>Execution impact</th></tr></thead>
+    <tbody>
+      <tr><td class="nowrap">G-01</td><td>SSO identity providers, tenant routing, and account eligibility are unnamed.</td><td>Which configured IdPs and account/tenant types must be covered, and how is each selected?</td><td>Blocks complete SSO compatibility coverage.</td></tr>
+      <tr><td class="nowrap">G-02</td><td>"Appropriate error messages" is not defined for SSO rejection.</td><td>Which invalid/failure conditions and user-visible messages/recovery actions are expected? Are lockout, retry, and rate-limit behaviors in scope?</td><td>Blocks expected-result sign-off for failure paths.</td></tr>
+      <tr><td class="nowrap">G-03</td><td>Passkey fallback and failure recovery are unspecified.</td><td>What exact guidance or fallback should appear when no credential exists, an authenticator is unavailable, or verification fails?</td><td>Blocks expected-result sign-off for passkey recovery.</td></tr>
+      <tr><td class="nowrap">G-04</td><td>Supported passkey browser/device matrix is not listed.</td><td>Which browsers, versions, operating systems, and device/authenticator combinations are supported or unsupported?</td><td>Blocks compatibility matrix completion.</td></tr>
+      <tr><td class="nowrap">G-05</td><td>Test identities and authentication data are not provided.</td><td>Provide safe staging accounts for valid/invalid SSO, configured IdPs, a registered passkey, and a no-passkey account, with expected account ownership.</td><td>Blocks repeatable end-to-end execution.</td></tr>
+      <tr><td class="nowrap">G-06</td><td>Security controls and observability scope are broad.</td><td>Which OAuth/SAML/WebAuthn profiles and sensitive fields/log sources are in scope? What role/ownership, replay, session, and redaction checks are required?</td><td>Blocks security acceptance beyond basic no-disclosure checks.</td></tr>
+      <tr><td class="nowrap">G-07</td><td>Accessibility is named without a conformance target.</td><td>Which WCAG version/level and assistive-technology/browser combinations are required?</td><td>Blocks accessibility exit criteria.</td></tr>
+      <tr><td class="nowrap">G-08</td><td>Responsive behavior is named without viewport or device targets.</td><td>Which viewport sizes and mobile/tablet layouts should be supported?</td><td>Limits responsive coverage.</td></tr>
+      <tr><td class="nowrap">G-09</td><td>No performance/load expectation is stated.</td><td>Are response-time, throughput, or load targets required for either login flow?</td><td>Performance is not currently an acceptance gate.</td></tr>
+      <tr><td class="nowrap">G-10</td><td>No localization/language requirement is stated.</td><td>Which locales and translated messages, if any, must this change support?</td><td>Localization coverage is undefined.</td></tr>
+      <tr><td class="nowrap">G-11</td><td>Audit and logging expectations are not specified; the ticket only prohibits sensitive data in UI/network logs.</td><td>Which audit events and log sources should be checked, and what safe event fields are expected?</td><td>Limits observability verification.</td></tr>
+      <tr><td class="nowrap">G-12</td><td>Regression and backward-compatibility scope is not stated.</td><td>Which existing login methods, account types, browsers, and sessions must remain unaffected?</td><td>Blocks defining regression exit coverage.</td></tr>
+      <tr><td class="nowrap">G-13</td><td>Staging is mentioned but URL, configuration, and feature flags are absent.</td><td>What is the staging URL, required configuration, and flag state for each flow?</td><td>Blocks environment readiness.</td></tr>
+      <tr><td class="nowrap">G-14</td><td>Boundary/state behavior is missing.</td><td>What should happen on user cancellation, timeout, retry, expired/invalid authentication response, and repeated attempts?</td><td>Blocks boundary and state-transition assertions.</td></tr>
+      <tr><td class="nowrap">G-15</td><td>No feature-flag or rollback behavior is documented.</td><td>Is the feature gated, and what rollback/disable behavior must be verified?</td><td>Operational recovery remains untested.</td></tr>
+      <tr><td class="nowrap">G-16</td><td>Terms such as "seamlessly", "smooth user experience", "supported", and "appropriate" lack measurable outcomes.</td><td>Can these terms be replaced with observable UX and compatibility criteria?</td><td>Prevents objective pass/fail decisions for those claims.</td></tr>
+      <tr><td class="nowrap">G-17</td><td>No design/mockup link or exact visual specification is attached to the issue.</td><td>Is a design reference available for spacing, labels, responsive layout, and error states?</td><td>Placement can be checked only against AC-1's stated order.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Test Scenarios</h2>
+  <p>Priority is a proposed risk ranking for review: P0 = core authentication/security gate; P1 = important UX/compatibility; P2 = lower-risk follow-up. It does not change the Jira priority.</p>
+  <table>
+    <thead><tr><th>ID</th><th>Priority</th><th>Type</th><th>Scenario / expected observation</th><th>Trace</th></tr></thead>
+    <tbody>
+      <tr><td class="nowrap">TP-01</td><td class="priority p1">P1</td><td>Positive / UI</td><td>Open the login page and confirm both exact button labels are visible below "Sign in with Google"; check no overlap or clipping at agreed viewport sizes.</td><td>AC-1, TS-1, G-08, G-17</td></tr>
+      <tr><td class="nowrap">TP-02</td><td class="priority p0">P0</td><td>Positive / SSO</td><td>Use a valid staging identity from each configured IdP; verify authentication succeeds and the user reaches the dashboard for the expected account.</td><td>AC-2, AC-5, TS-2, G-01, G-05</td></tr>
+      <tr><td class="nowrap">TP-03</td><td class="priority p0">P0</td><td>Negative / SSO</td><td>Attempt SSO with invalid/rejected credentials; verify no authenticated dashboard access and the agreed, non-sensitive error/recovery message is shown.</td><td>AC-2, AC-4, TS-3, G-02</td></tr>
+      <tr><td class="nowrap">TP-04</td><td class="priority p0">P0</td><td>Positive / Passkey</td><td>Sign in with a registered passkey and verify successful authentication, correct account, and redirect to the dashboard.</td><td>AC-3, TS-4, G-04, G-05</td></tr>
+      <tr><td class="nowrap">TP-05</td><td class="priority p1">P1</td><td>Negative / Empty state</td><td>For an account with no registered passkey, verify the agreed fallback or guidance appears and the user is not incorrectly authenticated.</td><td>AC-3, TS-5, G-03, G-05</td></tr>
+      <tr><td class="nowrap">TP-06</td><td class="priority p0">P0</td><td>Negative / Passkey</td><td>Cause a passkey verification failure using approved staging data; verify access is denied and the agreed error/retry path appears without exposing secrets.</td><td>AC-4, AC-6, G-03, G-06</td></tr>
+      <tr><td class="nowrap">TP-07</td><td class="priority p1">P1</td><td>Negative / Compatibility</td><td>Attempt passkey sign-in on each agreed unsupported browser/device; verify unsupported capability is handled with the agreed guidance and no misleading success state.</td><td>AC-4, AC-5, TS-6, G-04</td></tr>
+      <tr><td class="nowrap">TP-08</td><td class="priority p1">P1</td><td>Compatibility</td><td>Run passkey sign-in across the approved supported browser/device matrix and SSO across every configured IdP; record any platform-specific behavior.</td><td>AC-5, TS-6, G-01, G-04</td></tr>
+      <tr><td class="nowrap">TP-09</td><td class="priority p0">P0</td><td>Security / Negative</td><td>Verify the configured OAuth/SAML/WebAuthn mechanism and secure transport are used; inspect UI and available network/log evidence for sensitive-data exposure. Verify a credential for one test account cannot authenticate as a different account.</td><td>AC-6, G-05, G-06, G-11</td></tr>
+      <tr><td class="nowrap">TP-10</td><td class="priority p1">P1</td><td>Responsive / Accessibility</td><td>At agreed viewport and assistive-technology combinations, verify both options remain perceivable, operable, and understandable; include keyboard focus/order and error-message association.</td><td>TS-7, G-07, G-08, G-17</td></tr>
+      <tr><td class="nowrap">TP-11</td><td class="priority p1">P1</td><td>Regression</td><td>Confirm existing login options still render and their basic flow is not disrupted by the added controls; limit full regression to the scope agreed by the author.</td><td>G-12</td></tr>
+      <tr><td class="nowrap">TP-12</td><td class="priority p2">P2</td><td>Boundary / State</td><td>Once expected behavior is defined, exercise cancellation, timeout, retry, and repeated-attempt transitions; confirm no stale or success-shaped state remains.</td><td>G-02, G-03, G-14</td></tr>
+    </tbody>
+  </table>
+  <p class="small"><strong>Coverage note:</strong> TP-01 through TP-10 cover every scenario explicitly listed in KAN-4. TP-11/TP-12 are proposed risk-based additions and require the noted scope/behavior confirmations. Test execution is not represented as complete.</p>
+
+  <h2>4. Test Data &amp; Environment</h2>
+  <ul>
+    <li><strong>Environment:</strong> Staging is required by the ticket's Definition of Done. URL, build, flags, and environment setup are TBD (G-13).</li>
+    <li><strong>Data:</strong> Safe staging users with valid and invalid SSO, accounts for each configured IdP, a registered passkey, and a no-passkey account. No real user credentials or production secrets should be used (G-05).</li>
+    <li><strong>Platform matrix:</strong> Supported/unsupported browser, OS, device, and authenticator combinations must be confirmed before execution (G-04).</li>
+    <li><strong>Roles / permissions:</strong> User roles, account eligibility, and passkey ownership expectations are not specified (G-01, G-06).</li>
+    <li><strong>Evidence:</strong> Capture sanitized screenshots and approved test logs/network evidence only; do not retain credentials, tokens, or private authentication material.</li>
+  </ul>
+
+  <h2>5. Risks &amp; Assumptions</h2>
+  <ul>
+    <li><strong>Risk:</strong> Missing provider and browser matrices can leave compatibility gaps despite apparently passing tests.</li>
+    <li><strong>Risk:</strong> Undefined error/fallback copy makes failure-path results subjective and can conceal user lockout or unsafe recovery.</li>
+    <li><strong>Risk:</strong> Inadequate staging identities or authenticator setup can prevent valid end-to-end coverage.</li>
+    <li><strong>Risk:</strong> Broad security language lacks measurable protocol and logging requirements; security sign-off cannot be inferred from happy-path tests.</li>
+    <li><strong>Assumption:</strong> Dashboard means the authenticated landing destination for the test account; exact route and redirect details are unconfirmed.</li>
+    <li><strong>Assumption:</strong> The ticket's listed flows and outcomes are authoritative; this plan does not infer a provider setup or passkey-registration feature.</li>
+    <li><strong>Company context (provided, unverified):</strong> The supplied company note describes VWO as a "Bingify" product focused on A/B testing and states approximately 5,000 employees. The supplied logo image is branded TheTestingAcademy; its relationship to the company is unconfirmed. Confirm the company name and branding before external circulation.</li>
+  </ul>
+
+  <h2>6. Entry / Exit Criteria</h2>
+  <h3>Entry</h3>
+  <ul>
+    <li>Feature is deployed and accessible in the named staging environment; test flags/configuration are documented.</li>
+    <li>QA-approved test identities, IdP access, registered/no-passkey accounts, and platform matrix are available.</li>
+    <li>Blocking expected behaviors and the required accessibility/security scope are agreed (G-01 through G-08, G-13, G-14).</li>
+  </ul>
+  <h3>Exit</h3>
+  <ul>
+    <li>All agreed acceptance criteria and required scenarios have recorded results and traceable evidence.</li>
+    <li>No open Critical or High defects remain, consistent with the ticket's Definition of Done; remaining defects have explicit owner and acceptance.</li>
+    <li>Security, compatibility, accessibility, and regression results are reviewed against approved criteria; deviations are documented.</li>
+    <li>QA owner approves this plan and the execution results. No approval is implied by this draft.</li>
+  </ul>
+
+  <h2>7. Resource Allocation</h2>
+  <table>
+    <thead><tr><th>Role</th><th>Contribution needed</th><th>Owner / allocation</th></tr></thead>
+    <tbody>
+      <tr><td>QA owner / test lead</td><td>Resolve scope, approve criteria, review results and sign off.</td><td>TBD</td></tr>
+      <tr><td>QA engineer</td><td>Execute login, error, compatibility, responsive, and accessibility scenarios; record evidence.</td><td>TBD</td></tr>
+      <tr><td>Identity / authentication engineer</td><td>Provide staging IdPs, safe identities, supported-platform details, and log/security guidance.</td><td>TBD</td></tr>
+      <tr><td>Product / story author</td><td>Answer open behavior, UX, and scope questions.</td><td>TBD</td></tr>
+      <tr><td>Accessibility reviewer</td><td>Confirm and assess accessibility expectations if required.</td><td>TBD</td></tr>
+    </tbody>
+  </table>
+
+  <h2>8. Timelines &amp; Sprint Details</h2>
+  <p>The Jira response provided no sprint, fix version, or test dates. Target dates, duration, and execution sequence are <strong>TBD</strong>; confirm with the QA owner after entry criteria are met. The ticket requires staging deployment and QA sign-off but does not state a schedule.</p>
+
+  <h2>Requirement Checklist</h2>
+  <p>Checklist status reflects the ticket only: <strong>Present</strong> = stated clearly; <strong>Ambiguous</strong> = partially stated or not measurable; <strong>Missing</strong> = not specified.</p>
+  <table>
+    <thead><tr><th>Area</th><th>Requirement</th><th>Status</th><th>Evidence / gap</th></tr></thead>
+    <tbody>
+      <tr><td>Functional</td><td>Clear user story / goal</td><td>Present</td><td>Explicit user story explains sign-in goal.</td></tr>
+      <tr><td>Functional</td><td>Acceptance criteria testable</td><td>Ambiguous</td><td>Core outcomes exist; "appropriate", "supported", and secure-protocol detail are undefined (G-02, G-04, G-06, G-16).</td></tr>
+      <tr><td>Functional</td><td>Happy path fully described</td><td>Present</td><td>SSO and verified passkey success redirect to dashboard.</td></tr>
+      <tr><td>Functional</td><td>Negative / error paths described</td><td>Ambiguous</td><td>Failure classes listed, but expected messages/recovery are unspecified (G-02, G-03).</td></tr>
+      <tr><td>Functional</td><td>Boundary &amp; empty states</td><td>Missing</td><td>No timeout, cancellation, retry, or repeated-attempt rules (G-14).</td></tr>
+      <tr><td>Functional</td><td>State transitions / workflow steps</td><td>Ambiguous</td><td>Click, authenticate, and redirect are stated; intermediate/cancel/error transitions are absent (G-14).</td></tr>
+      <tr><td>Data &amp; environment</td><td>Test data specified or derivable</td><td>Missing</td><td>No accounts or identity data are supplied (G-05).</td></tr>
+      <tr><td>Data &amp; environment</td><td>Environment / configuration / flags</td><td>Ambiguous</td><td>Staging deployment is required; URL and configuration are absent (G-13).</td></tr>
+      <tr><td>Data &amp; environment</td><td>External dependencies / integrations</td><td>Ambiguous</td><td>Configured IdPs and WebAuthn-capable platforms are implied but unnamed (G-01, G-04).</td></tr>
+      <tr><td>Data &amp; environment</td><td>Preconditions / setup</td><td>Missing</td><td>Test-account and authenticator setup are not stated (G-05, G-13).</td></tr>
+      <tr><td>Non-functional</td><td>Performance / load expectations</td><td>Missing</td><td>No threshold or workload is stated (G-09).</td></tr>
+      <tr><td>Non-functional</td><td>Security / authorization</td><td>Ambiguous</td><td>Protocols and no-disclosure intent are stated; ownership, roles, and specific controls are not (G-06).</td></tr>
+      <tr><td>Non-functional</td><td>Accessibility expectations</td><td>Ambiguous</td><td>Accessibility scenario is requested; standard/level is not stated (G-07).</td></tr>
+      <tr><td>Non-functional</td><td>Internationalization / localization</td><td>Missing</td><td>No locale or language criteria are stated (G-10).</td></tr>
+      <tr><td>Non-functional</td><td>Audit / logging / observability</td><td>Ambiguous</td><td>Network-log data exposure is prohibited; audit events and log sources are undefined (G-11).</td></tr>
+      <tr><td>Cross-cutting</td><td>Impact on existing features</td><td>Ambiguous</td><td>Options are added beside existing methods; regression expectations are absent (G-12).</td></tr>
+      <tr><td>Cross-cutting</td><td>Backward compatibility / migration</td><td>Missing</td><td>No compatibility or migration statement is included (G-12).</td></tr>
+      <tr><td>Cross-cutting</td><td>Mobile / responsive / browser matrix</td><td>Ambiguous</td><td>Responsive and passkey support are mentioned without targets (G-04, G-08).</td></tr>
+      <tr><td>Cross-cutting</td><td>Rollback / feature-flag behavior</td><td>Missing</td><td>No rollout/rollback controls are described (G-15).</td></tr>
+      <tr><td>Clarity</td><td>Unambiguous wording</td><td>Ambiguous</td><td>"Smooth", "seamlessly", and "appropriate" have no measurable definition (G-16).</td></tr>
+      <tr><td>Clarity</td><td>Terms defined consistently</td><td>Ambiguous</td><td>SSO is expanded; supported providers/platforms and fallback terminology need definition (G-01, G-04, G-16).</td></tr>
+      <tr><td>Clarity</td><td>Mockups / designs linked and aligned</td><td>Missing</td><td>No design or visual reference was returned (G-17).</td></tr>
+    </tbody>
+  </table>
+
+  <section class="gate">
+    <h2>HUMAN REVIEW GATE - REQUIRED</h2>
+    <p><strong>Assumed:</strong> "Dashboard" is the authenticated landing destination; staging is the execution environment because the Definition of Done requires deployment there; no registration flow or provider configuration is in scope.</p>
+    <p><strong>Could not confirm:</strong> Supported browser/device and IdP matrices, staging access details, test data, exact errors/fallbacks, non-functional thresholds, regression scope, sprint/timing, and the company/logo identity pairing.</p>
+    <p><strong>Open questions blocking sign-off:</strong> Resolve the blocking questions in G-01 through G-08, G-13, and G-14; agree the remaining security, accessibility, regression, and operational scope.</p>
+    <p><strong>QA owner action:</strong> Review and approve or edit this draft before it is treated as an approved plan or before detailed test cases/automation are written.</p>
+  </section>
+
+  <footer>
+    Source: Jira KAN-4, fetched 10 Nov 2026. Components, fix versions, linked issues, and attachments were not returned.
+    Status remains draft pending human approval.
+  </footer>
+</main>
+</body>
+</html>
