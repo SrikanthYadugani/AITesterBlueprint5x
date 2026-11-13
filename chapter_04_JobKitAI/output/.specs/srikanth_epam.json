@@ -1,0 +1,76 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_EPAM_Lead_Automation_Test_Engineer.docx",
+  "docTitle": "Srikanth Yadugani - Lead Automation Test Engineer - EPAM Systems",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==LEAD AUTOMATION TEST ENGINEER==  |  JAVA & SELENIUM",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Lead Automation Test Engineer== with 15+ years in QA and automation for financial services and retirement software. Hands-on experience enhancing Selenium WebDriver frameworks with Java and Cucumber/BDD, building reusable validation utilities, and integrating scheduled regression execution with Jenkins and Git-based pipelines. Experienced in API testing with Postman, SQL-based data checks, peer reviews and release coordination."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Automation", "Java · Selenium WebDriver · Cucumber · BDD · Gherkin · Regression automation"],
+        ["Framework Enhancement", "Framework maintenance · Reusable validation utilities · XPath axis techniques · Peer code review"],
+        ["API & Data", "Postman · API testing · SQL Server · HyperSQL · XML · Pipe-delimited data validation"],
+        ["CI/CD & Source Control", "Jenkins · GitLab Pipelines · GitHub Pipelines · Git · GitHub · Maven"],
+        ["Test Delivery", "Functional · Integration · End-to-end · Regression · Test estimates · Defect lifecycle · Release coordination"],
+        ["Playwright", "Contributed to migration of existing automation capabilities into Axiom using Playwright libraries and TypeScript"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Enhanced and maintained Selenium-based automation frameworks using Java and Cucumber/BDD, applying XPath axis techniques for Ext JS application elements.",
+            "Automated in-sprint requirements and incorporated completed scripts into the regression suite for release validation.",
+            "Extended framework utilities for PDF comparison and validation, plan-health reports, file transfers and downloads, CCD Scrubber and CCD Splitter.",
+            "Scheduled weekly regression runs through GitLab and GitHub Pipelines and configured Jenkins jobs and Windows Task Scheduler executions.",
+            "Performed API testing with Postman and validated report data using SQL Server Management Studio and PowerSelect.",
+            "Contributed to migrating existing automation framework functionality to an Axiom-based implementation using Playwright libraries and TypeScript.",
+            "Reviewed code, estimated testing effort, identified delivery risks, mentored QA colleagues and coordinated QA/Production release activities."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Tested a platform for composing, integrating and delivering retirement and financial communications through print, email and online channels.",
+            "Environment included TurboTest BDD/Cucumber, Vega, Selenium, Java, Axiom, SQL, FTP, PDFBox, Maven and Postman."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Executed Selenium/QTP regression scripts for participant and sponsor applications and developed Selenium automation for eCompliance."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

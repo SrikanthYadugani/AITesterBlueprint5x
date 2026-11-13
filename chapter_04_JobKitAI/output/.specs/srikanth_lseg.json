@@ -1,0 +1,77 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_LSEG_Senior_Lead_QA_Engineer_FX.docx",
+  "docTitle": "Srikanth Yadugani - Senior Lead QA Engineer FX - LSEG",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==SENIOR LEAD QA ENGINEER (FX)==  |  FINANCIAL SERVICES QA",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "QA lead with 15+ years of experience delivering end-to-end testing and automation for financial services and retirement platforms. Experienced with Java, Selenium WebDriver, Cucumber/BDD, SQL, API testing, Maven and release coordination across functional, integration and regression testing. Brings production issue triage, test evidence, mentoring and CI-driven regression delivery; contributed to migration of existing automation capabilities using Playwright libraries and TypeScript."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Financial Services QA", "Retirement products · Customer communications · End-to-end testing · Release readiness"],
+        ["Automation", "Java · Selenium WebDriver · Cucumber/BDD · Maven · Regression automation"],
+        ["Test Delivery", "Functional · Integration · System · Regression · In-sprint automation · Test plans and estimates"],
+        ["API & Data", "Postman · API testing · SQL Server · HyperSQL · Report and data-file validation"],
+        ["CI/CD & Tools", "Jenkins · GitLab Pipelines · GitHub Pipelines · Git · Veracode · X-Ray"],
+        ["Leadership", "QA mentoring · Peer reviews · Risk identification · Defect triage · Release coordination"],
+        ["Playwright", "Contributed to existing automation capability migration using Playwright libraries and TypeScript"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Led and contributed to end-to-end QA, translating client and project requirements into scenarios, test cases, estimates and execution plans.",
+            "Automated sprint stories using Selenium WebDriver, Java and Cucumber/BDD, then incorporated completed scripts into regression.",
+            "Executed functional, integration and regression testing; triaged defects, retested fixes and published X-Ray execution results.",
+            "Performed API testing with Postman and validated database, report, XML and pipe-delimited data using SQL tools.",
+            "Scheduled weekly regression through GitLab and GitHub Pipelines, configured Jenkins jobs and coordinated release builds.",
+            "Enhanced automation utilities for plan-health reports, PDF comparison, CCD Scrubber and CCD Splitter.",
+            "Coordinated QA and Production deployments after Veracode scans and report publication; mentored QA colleagues and communicated readiness."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Worked on a financial and retirement communications platform covering document composition, data integration and print, email and online delivery.",
+            "Client organizations included Nationwide, MissionSquare, T. Rowe Price, Equitable, LPL, American Funds, DFA and Security Benefit."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Tested retirement recordkeeping products and executed Selenium/QTP regression across participant and sponsor applications."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_PETADATA_Senior_Testing_Lead.docx",
+  "docTitle": "Srikanth Yadugani - Senior Testing Lead - PETADATA",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==SENIOR TESTING LEAD==  |  AUTOMATION & DATA VALIDATION",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Senior Testing Lead== with 15+ years of QA experience in financial services and retirement software, spanning automation, functional testing, data checks and release delivery. Enhanced Java/Selenium frameworks and utilities for SQL-backed report validation, PDF comparison, file transfers and downloads, and XML and pipe-delimited data checks. Brings hands-on API testing, CI pipeline execution, test estimation and QA mentoring."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Test Leadership", "QA planning · Estimation · Risk identification · Mentoring · Release coordination"],
+        ["Functional & Automation QA", "Functional · Integration · End-to-end · Regression · Selenium WebDriver · Java · Cucumber/BDD"],
+        ["Data Validation", "SQL Server · HyperSQL · SQL queries · XML · Pipe-delimited files · Plan-health report validation"],
+        ["API & Frameworks", "Postman · API testing · Framework enhancement · Reusable automation utilities"],
+        ["Document & File Checks", "PDFBox · PDF comparison and validation · FTP/file transfer · File downloads"],
+        ["CI/CD & Tools", "Jenkins · GitLab Pipelines · GitHub Pipelines · Maven · Git · Veracode"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Led QA work across the STLC, translating requirements into test scenarios, test cases, effort estimates and execution plans.",
+            "Automated sprint requirements with Selenium WebDriver, Java and Cucumber/BDD and incorporated completed scripts into weekly regression.",
+            "Developed and enhanced utilities for plan-health report validation, PDF comparison, CCD Scrubber and CCD Splitter; used SQL to validate report data.",
+            "Extended automation frameworks for PDF validation, FTP file transfer and file downloads to support project-specific testing.",
+            "Validated database and data files using SQL Server Management Studio and PowerSelect, including XML and pipe-delimited formats.",
+            "Executed and scheduled regression via GitLab/GitHub Pipelines, Jenkins jobs, Windows Task Scheduler and GitLab Runner infrastructure.",
+            "Coordinated deployment and release activities, identified delivery risks, reviewed test estimates and mentored QA colleagues."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Worked on a communications platform integrating data and delivering retirement and financial documents through print, email and online channels.",
+            "Project environment included SQL, Postman, FTP, PDFBox, Selenium, Java, Cucumber and Maven."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Executed multi-environment testing and regression for retirement recordkeeping applications and developed Selenium scripts for eCompliance."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

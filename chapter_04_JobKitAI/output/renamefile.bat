@@ -1,0 +1,18 @@
+ren 'Srikanth_Yadugani_DTCC_Lead_Test_Engineer_Lead_Data_Tester_CLEAN.docx' 'Srikanth_Yadugani_DTCC_Lead_Test_Engineer_Lead_Data_Tester.docx'
+ren 'Srikanth_Yadugani_EPAM_Lead_Automation_Test_Engineer_CLEAN.docx' 'Srikanth_Yadugani_EPAM_Lead_Automation_Test_Engineer.docx'
+ren 'Srikanth_Yadugani_HCLTech_SDET_Senior_Test_Lead_CLEAN.docx' 'Srikanth_Yadugani_HCLTech_SDET_Senior_Test_Lead.docx'
+ren 'Srikanth_Yadugani_Infor_Team_Lead_Quality_Assurance_CLEAN.docx' 'Srikanth_Yadugani_Infor_Team_Lead_Quality_Assurance.docx'
+ren 'Srikanth_Yadugani_LSEG_Senior_Lead_QA_Engineer_FX_CLEAN.docx' 'Srikanth_Yadugani_LSEG_Senior_Lead_QA_Engineer_FX.docx'
+ren 'Srikanth_Yadugani_PETADATA_Senior_Testing_Lead_CLEAN.docx' 'Srikanth_Yadugani_PETADATA_Senior_Testing_Lead.docx'
+ren 'Srikanth_Yadugani_TTEC_Digital_QA_Lead_SDET_Lead_CLEAN.docx' 'Srikanth_Yadugani_TTEC_Digital_QA_Lead_SDET_Lead.docx'
+ren 'Srikanth_Yadugani_UST_Lead_II_Software_Testing_CLEAN.docx' 'Srikanth_Yadugani_UST_Lead_II_Software_Testing.docx'
+ren 'Srikanth_Yadugani_ValueLabs_Quality_Assurance_Lead_CLEAN.docx' 'Srikanth_Yadugani_ValueLabs_Quality_Assurance_Lead.docx'
+
+
+
+
+
+
+
+
+

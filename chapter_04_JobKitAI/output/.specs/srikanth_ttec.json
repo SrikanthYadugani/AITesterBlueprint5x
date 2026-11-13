@@ -1,0 +1,76 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_TTEC_Digital_QA_Lead_SDET_Lead.docx",
+  "docTitle": "Srikanth Yadugani - QA Lead SDET Lead - TTEC Digital",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==QA LEAD / SDET LEAD==  |  AUTOMATION & RELEASE QUALITY",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==QA Lead / SDET Lead== with 15+ years of experience in test automation, release validation and quality delivery for financial services and retirement software. Automates sprint requirements using Java, Selenium WebDriver and Cucumber, with weekly regression execution integrated into GitLab, GitHub and Jenkins workflows. Experienced in API testing, framework enhancement, test planning, mentoring and deployment coordination."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Automation Engineering", "Java · Selenium WebDriver · Cucumber/BDD · Gherkin · In-sprint automation · Regression suites"],
+        ["Quality Leadership", "Quality planning · Estimation · Mentoring · Peer reviews · Risk communication · Release coordination"],
+        ["API & Data", "Postman · API testing · SQL Server · HyperSQL · Report data validation"],
+        ["CI/CD", "GitLab Pipelines · GitHub Pipelines · Jenkins · GitLab Runner · Windows Task Scheduler"],
+        ["Test Coverage", "Functional · Integration · End-to-end · Regression · System · Sanity · Defect triage"],
+        ["Framework Utilities", "PDF comparison · File transfer/download · CCD Scrubber · CCD Splitter · Plan-health reports"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Automated sprint requirements using Selenium WebDriver, Java and Cucumber/BDD, adding completed scripts to the regression suite.",
+            "Planned and executed in-sprint tests, prepared test data, triaged defects, retested fixes and published X-Ray results for releases.",
+            "Scheduled weekly regression runs through GitLab and GitHub Pipelines and configured Jenkins jobs for test execution.",
+            "Enhanced Selenium frameworks and utilities for report validation, PDF comparison, file transfer and downloads, CCD Scrubber and CCD Splitter.",
+            "Performed API testing with Postman and validated database and report data using SQL Server Management Studio and PowerSelect.",
+            "Executed automation on Jenkins agents and testing machines and migrated scheduled test execution to GitLab Runner infrastructure.",
+            "Coordinated release builds and deployments, reviewed estimates, identified delivery risks and mentored QA colleagues."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Supported an integrated customer communications platform for retirement and financial services across print, email and online delivery.",
+            "Used Selenium, Java, Cucumber, Axiom, SQL, Postman, FTP, PDFBox and Maven."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Executed regression for participant and sponsor applications and developed Selenium automation for eCompliance."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

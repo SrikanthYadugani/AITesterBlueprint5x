@@ -1,0 +1,75 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_UST_Lead_II_Software_Testing.docx",
+  "docTitle": "Srikanth Yadugani - Lead II Software Testing - UST",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==LEAD II - SOFTWARE TESTING==  |  SDET & AUTOMATION",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Lead II - Software Testing== with 15+ years of experience in QA automation, API testing, SQL validation and release delivery. Hands-on with Java, Selenium WebDriver, Cucumber/BDD and CI pipelines, with contribution to an Axiom migration using Playwright libraries and TypeScript. Experienced planning automation, analyzing failures, coordinating test priorities and mentoring colleagues in financial services and retirement software."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Automation", "Selenium WebDriver · Java · Cucumber · BDD · Gherkin · In-sprint and regression automation"],
+        ["Playwright", "Contributed to migrating existing automation capabilities to Axiom using Playwright libraries and TypeScript"],
+        ["API & Database", "Postman · API testing · SQL Server · HyperSQL · SQL data validation"],
+        ["CI/CD & Source Control", "GitLab Pipelines · GitHub Pipelines · Jenkins · Git · GitLab Runner"],
+        ["Test Leadership", "Test planning · Estimation · Mentoring · Peer reviews · Release readiness"],
+        ["Quality Practices", "Functional · Integration · End-to-end · Regression · Defect debugging · Triage · Retesting"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Automated sprint requirements using Selenium WebDriver, Java and Cucumber/BDD and added completed scripts to the regression suite.",
+            "Contributed to migration of existing framework capabilities into Axiom using Playwright libraries and TypeScript.",
+            "Performed API testing with Postman and used SQL Server Management Studio and PowerSelect to validate report and database data.",
+            "Executed weekly regression through GitLab and GitHub Pipelines, configured Jenkins jobs and migrated scheduled execution to GitLab Runner.",
+            "Enhanced framework utilities for PDF/report validation, file transfers and downloads, CCD Scrubber and CCD Splitter.",
+            "Reviewed test estimates and execution plans, analyzed and retested defects, and coordinated release builds and deployments.",
+            "Mentored QA colleagues and worked with cross-functional teams on priorities, risks and release readiness."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Supported customer communications for retirement and financial products, including document composition, data integration and multichannel delivery."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Tested retirement participant and sponsor applications and developed Selenium scripts for eCompliance."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_ValueLabs_Quality_Assurance_Lead.docx",
+  "docTitle": "Srikanth Yadugani - Quality Assurance Lead - ValueLabs",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==QUALITY ASSURANCE LEAD==  |  TEST STRATEGY & DELIVERY",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Quality Assurance Lead== with 15+ years of experience spanning requirements analysis, test estimation, planning, execution, defect triage, regression and release coordination. Combines hands-on Selenium/Java/Cucumber automation with functional, integration, end-to-end and system testing, API testing with Postman, and SQL data validation. Experienced mentoring QA colleagues and coordinating cross-functional testing in financial services and retirement products."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["QA Leadership", "Test strategy · Effort estimation · Mentoring · Peer reviews · Risk identification · Release coordination"],
+        ["Test Planning & Execution", "Requirements analysis · Test design · Functional · Regression · Integration · System · End-to-end · Sanity"],
+        ["Automation", "Selenium WebDriver · Java · Cucumber · BDD · Gherkin · In-sprint automation"],
+        ["API & Database", "Postman · API testing · SQL Server · HyperSQL · SQL validation · XML and pipe-delimited data"],
+        ["Defect & Delivery", "Defect lifecycle · Triage · Retesting · X-Ray results · Agile/Scrum · Waterfall"],
+        ["CI/CD & Tools", "Jenkins · GitLab Pipelines · GitHub Pipelines · Git · Maven · Veracode"],
+        ["Playwright", "Contributed to Axiom framework migration using Playwright libraries and TypeScript"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Led and contributed to QA across the STLC, turning client and project requirements into test scenarios, cases, estimates and execution plans.",
+            "Planned in-sprint automation, prepared test data, executed tests, reported defects, retested fixes and published X-Ray execution results.",
+            "Automated sprint requirements with Selenium WebDriver, Java and Cucumber/BDD; added completed scripts to the regression suite.",
+            "Enhanced automation frameworks and utilities for report validation, PDF comparison, file transfers and downloads, CCD Scrubber and CCD Splitter.",
+            "Validated report and database data with SQL Server Management Studio and PowerSelect, including XML and pipe-delimited data checks.",
+            "Ran weekly regression through GitLab and GitHub Pipelines, configured Jenkins jobs, and coordinated release builds and deployments.",
+            "Reviewed estimates and SOWs, identified delivery risks, prioritized testing with available capacity and mentored QA colleagues."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9 | Retirement and financial communications",
+          "bullets": [
+            "Supported document composition, data integration and delivery of personalized retirement and financial communications via print, email and online channels.",
+            "Used Selenium, Java, Cucumber, SQL, Postman, FTP, PDFBox, Maven and Axiom within the project automation and validation environment."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14 | Retirement recordkeeping",
+          "bullets": [
+            "Analyzed requirements, prepared estimates and executed Waterfall testing across multiple environments.",
+            "Wrote and executed test cases, prioritized release support tickets, reproduced production issues and ran Selenium/QTP regression."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}

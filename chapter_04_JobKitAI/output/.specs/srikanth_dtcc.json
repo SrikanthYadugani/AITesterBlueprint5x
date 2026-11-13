@@ -1,0 +1,76 @@
+{
+  "output": "D:\\SriAITestingRepo\\AITesterBlueprint5x\\chapter_04_JobKitAI\\output\\Srikanth_Yadugani_DTCC_Lead_Test_Engineer_Lead_Data_Tester.docx",
+  "docTitle": "Srikanth Yadugani - Lead Test Engineer Lead Data Tester - DTCC",
+  "name": "SRIKANTH YADUGANI",
+  "title": "==LEAD TEST ENGINEER - LEAD DATA TESTER==  |  FINANCIAL SYSTEMS QA",
+  "contact": [
+    ["+91 99591 57633", "srikanth.snist@gmail.com|mailto:srikanth.snist@gmail.com"],
+    ["linkedin.com/in/srikanth-yadugani-28b778119|https://www.linkedin.com/in/srikanth-yadugani-28b778119", "github.com/SrikanthYadugani|https://github.com/SrikanthYadugani"]
+  ],
+  "margin": 0.5,
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Lead Test Engineer / Lead Data Tester== with 15+ years of QA experience across financial services and retirement platforms. Experienced translating requirements into end-to-end test scenarios, validating application and report data with SQL, and coordinating automation, defect triage and release delivery. Hands-on with Java, Selenium, Cucumber, Postman, SQL Server, HyperSQL, Jenkins and Git-based CI pipelines."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        ["Test Engineering", "Requirements analysis · Test scenarios and cases · Functional · Integration · End-to-end · Regression"],
+        ["Data & Database Validation", "SQL · SQL Server Management Studio · HyperSQL · XML · Pipe-delimited files · Report validation"],
+        ["Automation", "Java · Selenium WebDriver · Cucumber/BDD · Regression automation · Framework enhancement"],
+        ["API & Integration", "Postman · API testing · Data/file validation · FTP"],
+        ["Delivery & Leadership", "Test estimation · Risk identification · Defect triage · Mentoring · Release coordination"],
+        ["CI/CD & Tools", "Jenkins · GitLab Pipelines · GitHub Pipelines · Git · Maven · X-Ray · Veracode"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Software Engineer | progression from Trainee and Software Tester",
+          "org": "DST IT Services (now SS&C), India",
+          "meta": "February 2011 - September 2026 | Financial Services and Retirement",
+          "bullets": [
+            "Translated project and client requirements into test scenarios, test cases, estimates and plans across the STLC.",
+            "Validated report data using SQL queries and performed database and data-file checks with SQL Server Management Studio and PowerSelect.",
+            "Checked XML and pipe-delimited data files and enhanced utilities for plan-health reports, PDF comparison, CCD Scrubber and CCD Splitter.",
+            "Automated sprint requirements with Java, Selenium WebDriver and Cucumber/BDD and incorporated scripts into the regression suite.",
+            "Performed API testing with Postman and coordinated integration and regression execution for project releases.",
+            "Scheduled weekly regression through GitLab and GitHub Pipelines; configured Jenkins jobs and test execution schedules.",
+            "Triaged defects, retested fixes, published X-Ray results, mentored colleagues and coordinated release deployments."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "SELECTED PROJECT EXPERIENCE",
+      "roles": [
+        {
+          "title": "Lead QA Engineer / Senior Quality Analyst",
+          "org": "Newkirk Customer Communications",
+          "meta": "2015 - September 2026 | Project team: 9",
+          "bullets": [
+            "Supported a customer communications platform integrating data and delivering financial and retirement documents across print, email and online channels.",
+            "Used SQL, Postman, XML/data-file validation, Selenium, Java, Cucumber, FTP and PDFBox."
+          ]
+        },
+        {
+          "title": "Quality Analyst",
+          "org": "TRAC (Total Retirement Accounting Capabilities)",
+          "meta": "2011 - 2015 | Project team: 14",
+          "bullets": [
+            "Tested a retirement recordkeeping platform across multiple environments and executed Selenium/QTP regression for participant and sponsor applications."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["B.Tech", "Sreenidhi Institute of Science and Technology · 2006-2010 · 72.39%"],
+        ["Affiliation", "Jawaharlal Nehru Technological University, Hyderabad"]
+      ]
+    }
+  ]
+}
